@@ -1,0 +1,40 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
+name: Card
+status: experimental
+props:
+  type: object
+  required:
+    - title
+  properties:
+    image:
+      type: object
+      title: Image
+      description: The background image
+      examples:
+        - src: images/example-image.jpg
+          alt: 'Dexter the dog laying on a hammock and smiling'
+          width: 800
+          height: 600
+    title:
+      type: string
+      title: Title
+      description: The title text
+      examples:
+        - Title text
+    link_url:
+      type: string
+      format: uri-reference
+      title: URL
+      description: The entire card will be clickable if populated
+      examples:
+        - https://example.com
+
+# Slots always hold arbitrary markup. We know that beforehand, so no need for
+# a schema for slots.
+slots:
+  # The key is the name of the slot. In your template you will use
+  # {% block content %}.
+  content:
+    title: Content
+    required: true
+    description: The card content.

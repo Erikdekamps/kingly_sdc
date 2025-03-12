@@ -1,0 +1,5 @@
+<{{ html_tag|default('article') }}{{ attributes.addClass('kingly-card') }}>
+  <div class="kingly-card__wrapper">
+    {% block content %}{% endblock %}
+  </div>
+</{{ html_tag|default('article') }}>

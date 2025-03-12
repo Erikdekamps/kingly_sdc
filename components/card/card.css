@@ -1,0 +1,47 @@
+.kingly-card {
+  background: #fff;
+  transition: all .35s ease;
+  filter: drop-shadow(0 0.75rem 1.5rem rgba(0, 22, 44, .06));
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+.kingly-card .kingly-card__content {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Card Horizontal */
+.kingly-card.paragraph.paragraph--view-mode--card-horizontal .kingly-card__content {
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.kingly-card.paragraph.paragraph--view-mode--card-horizontal .kingly-card__content .card-column-left,
+.kingly-card.paragraph.paragraph--view-mode--card-horizontal .kingly-card__content .card-column-right {
+  flex: 50%;
+}
+
+.kingly-card.paragraph.paragraph--view-mode--card-horizontal .kingly-card__content img {
+  border-radius: 1rem;
+}
+
+/* Card Vertical */
+.kingly-card.paragraph.paragraph--view-mode--card-vertical .kingly-card__content {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.kingly-card.paragraph.paragraph--view-mode--card-vertical img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+/* Card vertical text */
+.kingly-card.paragraph.paragraph--view-mode--card-vertical .field--name-field-card-title,
+.kingly-card.paragraph.paragraph--view-mode--card-vertical .field--name-field-card-link {
+  padding: 0 1rem;
+}
+
+.kingly-card .field:not(:last-child) {
+  margin-block-end: 0;
+}
