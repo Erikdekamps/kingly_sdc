@@ -1,8 +1,8 @@
 {
     "name": "erikdekamps/kingly_sdc",
+    "type": "drupal-module",
     "description": "A Drupal module that provides Kingly single directory components.",
     "keywords": ["recipe", "Drupal base install", "best practices", "simple install"],
-    "type": "drupal-recipe",
     "license": "GPL-2.0-or-later",
     "require": {
         "drupal/core": ">=10.3"
