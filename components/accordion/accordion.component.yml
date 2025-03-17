@@ -6,10 +6,10 @@ props:
   required:
     - text
   properties:
-    heading:
-      title: Heading
-      description: The heading of the accordion
-      type: string
+#    heading:
+#      title: Heading
+#      description: The heading of the accordion
+#      type: string
     text:
       title: Text
       description: The text content of the accordion
@@ -20,6 +20,10 @@ props:
 slots:
   # The key is the name of the slot. In your template you will use
   # {% block content %}.
+  heading:
+    title: Content
+    required: true
+    description: The heading content.
   content:
     title: Content
     required: true
@@ -28,4 +32,4 @@ slots:
 libraryOverrides:
   css:
     component:
-      collapsible.css: { }
+      accordion.css: { }
