@@ -1,7 +1,7 @@
-.kingly-text {
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
+.kingly-text .text-content {
+  color: var(--utrecht-paragraph-color, inherit);
+  font-family: var(--utrecht-paragraph-font-family), serif;
+  font-size: var(--utrecht-paragraph-font-size);
+  font-weight: var(--utrecht-paragraph-font-weight);
+  line-height: var(--utrecht-paragraph-line-height);
 }
