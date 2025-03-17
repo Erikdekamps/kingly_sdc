@@ -25,4 +25,4 @@ libraryOverrides:
   css:
     component:
       ../../node_modules/@nl-design-system-candidate/paragraph-css/dist/paragraph.css: { }
-
+      text.css: { }
