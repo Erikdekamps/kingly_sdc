@@ -1,5 +1,5 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
-name: Collapsible
+name: Accordion
 status: experimental
 props:
   type: object
@@ -8,11 +8,11 @@ props:
   properties:
     heading:
       title: Heading
-      description: The heading of the collapsible
+      description: The heading of the accordion
       type: string
     text:
       title: Text
-      description: The text content of the collapsible
+      description: The text content of the accordion
       type: string
 
 # Slots always hold arbitrary markup. We know that beforehand, so no need for
