@@ -3,8 +3,6 @@ name: Media
 status: experimental
 props:
   type: object
-  required:
-    - text
   properties:
     text:
       title: Text

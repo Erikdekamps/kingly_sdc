@@ -3,8 +3,6 @@ name: Accordion
 status: experimental
 props:
   type: object
-  required:
-    - text
   properties:
 #    heading:
 #      title: Heading

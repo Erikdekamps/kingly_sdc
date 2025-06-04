@@ -3,8 +3,6 @@ name: Card
 status: experimental
 props:
   type: object
-  required:
-    - title
   properties:
     image:
       type: object
