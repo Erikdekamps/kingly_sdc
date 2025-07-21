@@ -18,9 +18,3 @@ slots:
     title: Content
     required: true
     description: The text content.
-
-libraryOverrides:
-  css:
-    component:
-      ../../node_modules/@nl-design-system-candidate/paragraph-css/dist/paragraph.css: { }
-      text.css: { }
